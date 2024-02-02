@@ -1,0 +1,24 @@
+<div class="w-full lg:px-24 md:px-16 sm:px-8">
+  <div class="w-full flex items-left pt-10 pb-4">
+    <%= image_tag "zhiva-logo.svg" %>
+  </div>
+  <div class="flex">
+    <div class="flex w-2/3 nav-div-left">
+      <div class="nav-border-one">
+      </div>
+      <div class="nav-border-two">
+      </div>
+      <div class="nav-border-three">
+      </div>
+    </div>
+    <div class="flex w-1/3 justify-end nav-div-right">
+      <%# menu dropdown %>
+      <div class="pl-6 dropdown">
+        <p class="text-2xl leading-10 mt-8 font-regular"><%= link_to "Projects", root_path %></p>
+        <p class="text-2xl leading-10 font-regular"><%= link_to "Sustainability", root_path %></p>
+        <p class="text-2xl leading-10 font-regular"><%= link_to "Clients", root_path %></p>
+        <p class="text-2xl leading-10 font-regular"><%= link_to "About", root_path %></p>
+      </div>
+    </div>
+  </div>
+</div>

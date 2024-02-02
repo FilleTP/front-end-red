@@ -1,0 +1,7 @@
+@import 'custom.css';
+@import 'navbar.css';
+@import 'home_page.css';
+@import 'button.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

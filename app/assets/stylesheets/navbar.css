@@ -1,0 +1,74 @@
+.nav-border-one,
+.nav-border-two,
+.nav-border-three {
+  width: 0;
+  border-bottom: 1.5rem solid transparent;
+  transition: width 0.6s ease, border-color 0.6s ease;
+}
+
+.nav-border-one {
+  animation: expandDivOne 0.6s ease 0.3s forwards;
+}
+
+.nav-border-two {
+  animation: expandDivTwo 0.6s ease 0.6s forwards;
+}
+
+.nav-border-three {
+  animation: expandDivThree 0.6s ease 0.9s forwards;
+}
+
+@keyframes expandDivOne {
+  to {
+    width: 65%;
+    border-color: #F66A63;
+  }
+}
+
+@keyframes expandDivTwo {
+  to {
+    width: calc(20% - 1.5rem);
+    margin-left: 1.5rem;
+    border-color: #09959C;
+  }
+}
+
+@keyframes expandDivThree {
+  to {
+    width: calc(7% - 1.5rem);
+    margin-left: 1.5rem;
+    border-color: #09959C;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  width: 0;
+  height: 1.5rem;
+  border-left: 1.5rem solid transparent;
+  transition: height 0.6s ease;
+  left: 50%;
+  overflow: hidden;
+}
+
+.dropdown {
+  animation: expandDivFour 0.6s ease 1.1s forwards;
+}
+
+@keyframes expandDivFour {
+  to {
+    width: 50%;
+    border-color: #F66A63;
+    transition: height 0.6s ease, border-color 0.6s ease, overflow 0.6s ease;
+  }
+}
+
+
+.nav-div-right {
+  position: relative;
+}
+
+.nav-div-right:hover .dropdown {
+  height: 20rem;
+  overflow: visible;
+}
